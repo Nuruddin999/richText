@@ -1,3 +1,5 @@
 module.exports = {
-    publicPath: '/richtext/' 
-  }
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/richText/'
+    : '/'
+}
